@@ -1,7 +1,6 @@
 import animals.*;
-import transport.Bus;
-import transport.Car;
-import transport.Train;
+import transport.*;
+
 
 public class SkyproOOP3 {
     public static void main(String[] args) {
