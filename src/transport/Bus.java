@@ -1,3 +1,5 @@
+package transport;
+
 public class Bus extends Transport{
     public Bus(String brand, String model, int prodYear, String originCountry, String color, int maxSpeed) {
         super(brand, model, prodYear, originCountry, color, maxSpeed);
@@ -5,10 +7,10 @@ public class Bus extends Transport{
 
     @Override
     public void refill(String fuel) {
-        if (fuel == "Gasoline" || fuel == "Diesel" || fuel == "Electricity") {
+        if (fuel == "Gasoline" || fuel == "Diesel" ) {
             System.out.println("Refilling with "+validateUtil.validateString(fuel));
         }else {
-            System.out.println("wrong fuel");
+            System.out.println("Wrong fuel");
         }
 
     }

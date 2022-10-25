@@ -1,3 +1,5 @@
+package transport;
+
 public abstract class Transport {
     private String brand;
     private String model;
@@ -5,19 +7,24 @@ public abstract class Transport {
     private String originCountry;
     private String color;
     private int maxSpeed;
+
     ValidateUtil validateUtil = new ValidateUtil();
 
     public Transport(){
 
     }
 
+
+
     public Transport(String brand, String model, int prodYear, String originCountry, String color, int maxSpeed) {
+
         setBrand(brand);
         setModel(model);
         setProdYear(prodYear);
         setOriginCountry(originCountry);
         setColor(color);
         setMaxSpeed(maxSpeed);
+
     }
 
     public abstract void refill(String fuel);
