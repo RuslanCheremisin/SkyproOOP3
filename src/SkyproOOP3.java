@@ -1,13 +1,16 @@
 public class SkyproOOP3 {
     public static void main(String[] args) {
 
-        Transport transport = new Transport("Brand", "Model", 1999, "Uganda", "Camo", 200);
-        System.out.println(transport);
+//        Transport transport = new Transport("Brand", "Model", 1999, "Uganda", "Camo", 200);
+//        System.out.println(transport);
 
         Car benz = new Car("Mercedes-Benz", "G-wagon", 2012, "Germany", "Black", 240);
         System.out.println(benz);
+        benz.refill("Gasoline");
+
 
         Train lastochka = new Train("Ласточка", "B-901", 2011, "Россия", 301, 3500, 5, "Белорусский вокзал", "Минск-Пассажирский", 11);
+        lastochka.refill("Diesel");
         System.out.println(lastochka);
 
         Train leningrad = new Train("Ленинград", "D-125", 2019,"Россия", 270, 1700, 7,"Ленинградский вокзал", "Ленинград-Пассажирский", 8);

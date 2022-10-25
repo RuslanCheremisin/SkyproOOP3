@@ -1,9 +1,15 @@
-public class Transport {
+public abstract class Transport {
+    private String brand;
+    private String model;
+    private int prodYear;
+    private String originCountry;
+    private String color;
+    private int maxSpeed;
     ValidateUtil validateUtil = new ValidateUtil();
+
     public Transport(){
 
     }
-
 
     public Transport(String brand, String model, int prodYear, String originCountry, String color, int maxSpeed) {
         setBrand(brand);
@@ -14,12 +20,7 @@ public class Transport {
         setMaxSpeed(maxSpeed);
     }
 
-    private String brand;
-    private String model;
-    private int prodYear;
-    private String originCountry;
-    private String color;
-    private int maxSpeed;
+    public abstract void refill(String fuel);
 
     public String getBrand() {
         return brand;
