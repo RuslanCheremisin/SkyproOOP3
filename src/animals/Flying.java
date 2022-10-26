@@ -40,10 +40,10 @@ public class Flying extends Birds{
     }
 
     private void setSpecies(String species) {
-        this.species = validateUtil.validateString(species);
+        this.species = ValidateUtil.validateString(species);
     }
     private void setMovementType(String movementType) {
-        this.movementType = validateUtil.validateString(movementType);
+        this.movementType = ValidateUtil.validateString(movementType);
     }
 
     public String getMovementType() {

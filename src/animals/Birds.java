@@ -27,6 +27,6 @@ public abstract class Birds extends Animals{
     }
 
     private void setHabitatArea(String habitatArea) {
-        this.habitatArea = validateUtil.validateString(habitatArea);
+        this.habitatArea = ValidateUtil.validateString(habitatArea);
     }
 }

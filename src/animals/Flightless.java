@@ -44,7 +44,7 @@ public class Flightless extends Birds{
     }
 
     private void setSpecies(String species) {
-        this.species = validateUtil.validateString(species);
+        this.species = ValidateUtil.validateString(species);
     }
 
     public String getMovementType() {
@@ -52,7 +52,7 @@ public class Flightless extends Birds{
     }
 
     private void setMovementType(String movementType) {
-        this.movementType = validateUtil.validateString(movementType);
+        this.movementType = ValidateUtil.validateString(movementType);
     }
     @Override
     public String toString(){

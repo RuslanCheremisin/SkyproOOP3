@@ -8,7 +8,7 @@ public class Bus extends Transport{
     @Override
     public void refill(String fuel) {
         if (fuel == "Gasoline" || fuel == "Diesel" ) {
-            System.out.println("Refilling with "+validateUtil.validateString(fuel));
+            System.out.println("Refilling with "+ValidateUtil.validateString(fuel));
         }else {
             System.out.println("Wrong fuel");
         }

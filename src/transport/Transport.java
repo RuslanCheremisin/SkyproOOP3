@@ -8,7 +8,6 @@ public abstract class Transport {
     private String color;
     private int maxSpeed;
 
-    ValidateUtil validateUtil = new ValidateUtil();
 
     public Transport(){
 
@@ -53,28 +52,28 @@ public abstract class Transport {
         return maxSpeed;
     }
 
-    public void setColor(String color) {
-        this.color = validateUtil.validateString(color);
+    private void setColor(String color) {
+        this.color = ValidateUtil.validateString(color);
     }
 
     public void setMaxSpeed(int maxSpeed) {
-        this.maxSpeed = validateUtil.validateInt(maxSpeed);
+        this.maxSpeed = ValidateUtil.validateInt(maxSpeed);
     }
 
-    public void setBrand(String brand) {
-        this.brand = validateUtil.validateString(brand);
+    private void setBrand(String brand) {
+        this.brand = ValidateUtil.validateString(brand);
     }
 
-    public void setModel(String model) {
-        this.model = validateUtil.validateString(model);
+    private void setModel(String model) {
+        this.model = ValidateUtil.validateString(model);
     }
 
-    public void setProdYear(int prodYear) {
-        this.prodYear = validateUtil.validateInt(prodYear);
+    private void setProdYear(int prodYear) {
+        this.prodYear = ValidateUtil.validateInt(prodYear);
     }
 
-    public void setOriginCountry(String originCountry) {
-        this.originCountry = validateUtil.validateString(originCountry);
+    private void setOriginCountry(String originCountry) {
+        this.originCountry = ValidateUtil.validateString(originCountry);
     }
 
     @Override

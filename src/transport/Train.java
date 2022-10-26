@@ -24,7 +24,7 @@ public class Train extends Transport{
     @Override
     public void refill(String fuel) {
         if (fuel == "Diesel") {
-            System.out.println("Refilling with "+validateUtil.validateString(fuel));
+            System.out.println("Refilling with "+ValidateUtil.validateString(fuel));
         }else {
             System.out.println("wrong fuel");
         };
@@ -35,7 +35,7 @@ public class Train extends Transport{
     }
 
     public void setTicketPrice(int ticketPrice) {
-        this.ticketPrice = validateUtil.validateInt(ticketPrice);;
+        this.ticketPrice = ValidateUtil.validateInt(ticketPrice);;
     }
 
     public int getTravelTimeHours() {
@@ -43,7 +43,7 @@ public class Train extends Transport{
     }
 
     public void setTravelTimeHours(int travelTimeHours) {
-        this.travelTimeHours = validateUtil.validateInt(travelTimeHours);
+        this.travelTimeHours = ValidateUtil.validateInt(travelTimeHours);
     }
 
     public String getStartStation() {
@@ -51,7 +51,7 @@ public class Train extends Transport{
     }
 
     public void setStartStation(String startStation) {
-        this.startStation = validateUtil.validateString(startStation);
+        this.startStation = ValidateUtil.validateString(startStation);
     }
 
     public String getEndStation() {
@@ -59,7 +59,7 @@ public class Train extends Transport{
     }
 
     public void setEndStation(String endStation) {
-        this.endStation = validateUtil.validateString(endStation);
+        this.endStation = ValidateUtil.validateString(endStation);
     }
 
     public int getNumberOfTrainCars() {
@@ -67,7 +67,7 @@ public class Train extends Transport{
     }
 
     public void setNumberOfTrainCars(int numberOfTrainCars) {
-        this.numberOfTrainCars = validateUtil.validateInt(numberOfTrainCars);
+        this.numberOfTrainCars = ValidateUtil.validateInt(numberOfTrainCars);
     }
 
     @Override

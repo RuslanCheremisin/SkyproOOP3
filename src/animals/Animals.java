@@ -4,7 +4,7 @@ public abstract class Animals {
     private String name;
     private int age;
 
-    ValidateUtil validateUtil = new ValidateUtil();
+//    ValidateUtil validateUtil = new ValidateUtil();
 
     public Animals(String name, int age) {
         setName(name);
@@ -20,7 +20,7 @@ public abstract class Animals {
     }
 
     private void setName(String name) {
-        this.name = validateUtil.validateString(name);
+        this.name = ValidateUtil.validateString(name);
     }
 
     public int getAge() {
@@ -28,6 +28,6 @@ public abstract class Animals {
     }
 
     public void setAge(int age) {
-        this.age = validateUtil.validateInt(age);
+        this.age = ValidateUtil.validateInt(age);
     }
 }

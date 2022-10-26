@@ -10,7 +10,7 @@ public class Car extends Transport{
     public void refill(String fuel) {
 
         if (fuel == "Gasoline" || fuel == "Diesel" || fuel == "Electricity") {
-        System.out.println("Refilling with "+validateUtil.validateString(fuel));
+        System.out.println("Refilling with "+ValidateUtil.validateString(fuel));
         }else {
             System.out.println("wrong fuel");
         }

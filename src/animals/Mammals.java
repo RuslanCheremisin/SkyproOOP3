@@ -18,7 +18,7 @@ public abstract class Mammals extends Animals{
     }
 
     private void setHabitatArea(String habitatArea) {
-        this.habitatArea = validateUtil.validateString(habitatArea);
+        this.habitatArea = ValidateUtil.validateString(habitatArea);
     }
 
     public int getMovementSpeed() {
@@ -26,6 +26,6 @@ public abstract class Mammals extends Animals{
     }
 
     private void setMovementSpeed(int movementSpeed) {
-        this.movementSpeed = validateUtil.validateInt(movementSpeed);
+        this.movementSpeed = ValidateUtil.validateInt(movementSpeed);
     }
 }

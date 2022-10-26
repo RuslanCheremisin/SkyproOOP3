@@ -38,7 +38,7 @@ public class Carnivores extends Mammals{
     }
 
     private void setSpecies(String species) {
-        this.species = validateUtil.validateString(species);
+        this.species = ValidateUtil.validateString(species);
     }
 
     public String getFoodType() {
@@ -46,7 +46,7 @@ public class Carnivores extends Mammals{
     }
 
     private void setFoodType(String foodType) {
-        this.foodType = validateUtil.validateString(foodType);
+        this.foodType = ValidateUtil.validateString(foodType);
     }
     @Override
     public String toString(){

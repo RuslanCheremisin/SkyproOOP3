@@ -19,22 +19,22 @@ public class SkyproOOP3 {
         lastochka.refill("Diesel");
         System.out.println(lastochka);
 
-        Train leningrad = new Train("Ленинград", "D-125", 2019,"Россия", 270, 1700, 7,"Ленинградский вокзал", "Ленинград-Пассажирский", 8);
+        Train leningrad = new Train("Ленинград", "D-125", 2019,null, 270, 1700, 7,"Ленинградский вокзал", "Ленинград-Пассажирский", 8);
         System.out.println(leningrad);
 
         Bus ikarus250 = new Bus("Ikarus", "250", 1999, "Hungary", "Red and White", 120);
         ikarus250.refill("Electricity");
         System.out.println(ikarus250);
 
-        Bus zhongTong = new Bus("Zhong Tong", "Cruise 6107H", 2019, "China", "Gold metallic", 120);
+        Bus zhongTong = new Bus("Zhong Tong", "Cruise 6107H", 2019, "China", "", 0);
         System.out.println(zhongTong);
 
-        Bus laz699 = new Bus("LAZ", "699A", 1966, "USSR", "White", 102);
+        Bus laz699 = new Bus("LAZ", "699A", 1966, "", "White", 102);
         System.out.println(laz699);
 
         System.out.println("Задание 3");
 
-        Herbivores gazelleGazik = new Herbivores("Газель","Газик", 12, "савана", 55, "трава, кустарники");
+        Herbivores gazelleGazik = new Herbivores("Газель","Газик", 12, "саванна", 55, "трава, кустарники");
         Herbivores Rafik = new Herbivores("Жираф","Рафик",15,"Мадагаскар",50,"Листва, трава");
         Herbivores horseSpirit = new Herbivores("Лошадь","Спирит", 17, "степь", 70, "трава, овощи, фрукты");
 

@@ -37,14 +37,14 @@ public class Amphibians extends Animals{
     }
 
     private void setHabitatArea(String habitatArea) {
-        this.habitatArea = validateUtil.validateString(habitatArea);
+        this.habitatArea = ValidateUtil.validateString(habitatArea);
     }
     public String getSpecies() {
         return species;
     }
 
     private void setSpecies(String species) {
-        this.species = validateUtil.validateString(species);
+        this.species = ValidateUtil.validateString(species);
     }
     @Override
     public String toString(){
