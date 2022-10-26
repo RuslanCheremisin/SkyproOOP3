@@ -1,28 +1,25 @@
 package transport;
 
 public abstract class Transport {
-    private String brand;
     private String model;
     private int prodYear;
     private String originCountry;
     private String color;
     private int maxSpeed;
-
-
-    public Transport(){
-
-    }
-
+    private final String brand;
 
 
     public Transport(String brand, String model, int prodYear, String originCountry, String color, int maxSpeed) {
 
-        setBrand(brand);
+        this.brand = ValidateUtil.validateString(brand);
         setModel(model);
         setProdYear(prodYear);
         setOriginCountry(originCountry);
         setColor(color);
         setMaxSpeed(maxSpeed);
+
+    }
+    public Transport(){
 
     }
 
@@ -60,9 +57,9 @@ public abstract class Transport {
         this.maxSpeed = ValidateUtil.validateInt(maxSpeed);
     }
 
-    private void setBrand(String brand) {
-        this.brand = ValidateUtil.validateString(brand);
-    }
+//    private void setBrand(String brand) {
+//        this.brand = ValidateUtil.validateString(brand);
+//    }
 
     private void setModel(String model) {
         this.model = ValidateUtil.validateString(model);
