@@ -1,3 +1,5 @@
+package transport;
+
 public class ValidateUtil {
     public static String validateString(String value) {
         if (value!=null && !value.isEmpty() && !value.isBlank()) {
