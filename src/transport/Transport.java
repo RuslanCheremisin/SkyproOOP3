@@ -1,27 +1,25 @@
 package transport;
 
 public abstract class Transport {
-    private String model;
-    private int prodYear;
-    private String originCountry;
+    private final String brand;
+    private final String model;
+    private final int prodYear;
+    private final String originCountry;
     private String color;
     private int maxSpeed;
-    private final String brand;
 
 
     public Transport(String brand, String model, int prodYear, String originCountry, String color, int maxSpeed) {
 
         this.brand = ValidateUtil.validateString(brand);
-        setModel(model);
-        setProdYear(prodYear);
-        setOriginCountry(originCountry);
+        this.model = ValidateUtil.validateString(model);
+        this.prodYear = ValidateUtil.validateInt(prodYear);
+        this.originCountry = ValidateUtil.validateString(originCountry);
         setColor(color);
         setMaxSpeed(maxSpeed);
 
     }
-    public Transport(){
 
-    }
 
     public abstract void refill(String fuel);
 
@@ -57,21 +55,6 @@ public abstract class Transport {
         this.maxSpeed = ValidateUtil.validateInt(maxSpeed);
     }
 
-//    private void setBrand(String brand) {
-//        this.brand = ValidateUtil.validateString(brand);
-//    }
-
-    private void setModel(String model) {
-        this.model = ValidateUtil.validateString(model);
-    }
-
-    private void setProdYear(int prodYear) {
-        this.prodYear = ValidateUtil.validateInt(prodYear);
-    }
-
-    private void setOriginCountry(String originCountry) {
-        this.originCountry = ValidateUtil.validateString(originCountry);
-    }
 
     @Override
     public String toString() {

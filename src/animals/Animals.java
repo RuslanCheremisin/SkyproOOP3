@@ -1,14 +1,13 @@
 package animals;
 
 public abstract class Animals {
-    private String name;
-    private int age;
+    private final String name;
+    private final int age;
 
-//    ValidateUtil validateUtil = new ValidateUtil();
 
     public Animals(String name, int age) {
-        setName(name);
-        setAge(age);
+        this.name = ValidateUtil.validateString(name);
+        this.age = ValidateUtil.validateInt(age);
     }
 
     public abstract void eat();
@@ -19,15 +18,8 @@ public abstract class Animals {
         return name;
     }
 
-    private void setName(String name) {
-        this.name = ValidateUtil.validateString(name);
-    }
-
     public int getAge() {
         return age;
     }
 
-    public void setAge(int age) {
-        this.age = ValidateUtil.validateInt(age);
-    }
 }

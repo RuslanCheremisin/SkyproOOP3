@@ -7,8 +7,8 @@ public class Herbivores extends Mammals{
 
     public Herbivores(String species, String name, int age, String habitatArea, int movementSpeed,String foodType) {
         super(name, age, habitatArea, movementSpeed);
-       setFoodType(foodType);
-       setSpecies(species);
+        this.species = ValidateUtil.validateString(species);
+        setFoodType(foodType);
     }
 
     @Override
@@ -37,11 +37,6 @@ public class Herbivores extends Mammals{
     public String getSpecies() {
         return species;
     }
-
-    private void setSpecies(String species) {
-        this.species = ValidateUtil.validateString(species);
-    }
-
 
     public String getFoodType() {
         return foodType;

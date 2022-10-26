@@ -8,7 +8,7 @@ public class Flightless extends Birds{
     public Flightless(String species, String name, int age, String habitatArea, String movementType){
         super(name, age, habitatArea);
         setMovementType(movementType);
-        setSpecies(species);
+        this.species = ValidateUtil.validateString(species);
     }
 
     @Override
@@ -41,10 +41,6 @@ public class Flightless extends Birds{
     }
     public String getSpecies() {
         return species;
-    }
-
-    private void setSpecies(String species) {
-        this.species = ValidateUtil.validateString(species);
     }
 
     public String getMovementType() {

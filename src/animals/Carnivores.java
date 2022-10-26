@@ -2,13 +2,13 @@ package animals;
 
 public class Carnivores extends Mammals{
 
-    private String species;
+    private final String species;
     public String foodType;
 
     public Carnivores(String species, String name, int age, String habitatArea, int movementSpeed, String foodType){
         super(name,age,habitatArea, movementSpeed);
-        setSpecies(species);
-        setFoodType(foodType);
+        this.species = ValidateUtil.validateString(species);
+        this.foodType = ValidateUtil.validateString(foodType);
     }
     @Override
     public void eat(){
@@ -37,17 +37,10 @@ public class Carnivores extends Mammals{
         return species;
     }
 
-    private void setSpecies(String species) {
-        this.species = ValidateUtil.validateString(species);
-    }
-
     public String getFoodType() {
         return foodType;
     }
 
-    private void setFoodType(String foodType) {
-        this.foodType = ValidateUtil.validateString(foodType);
-    }
     @Override
     public String toString(){
         return

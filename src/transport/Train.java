@@ -17,9 +17,7 @@ public class Train extends Transport{
         setNumberOfTrainCars(numberOfTrainCars);
     }
 
-    public Train() {
 
-    }
 
     @Override
     public void refill(String fuel) {

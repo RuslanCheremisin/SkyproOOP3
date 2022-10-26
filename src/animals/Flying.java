@@ -7,8 +7,8 @@ public class Flying extends Birds{
 
     public Flying(String species, String name, int age, String habitatArea, String movementType){
         super(name, age, habitatArea);
+        this.species = ValidateUtil.validateString(species);
         setMovementType(movementType);
-        setSpecies(species);
     }
     @Override
     public void eat(){
@@ -39,9 +39,7 @@ public class Flying extends Birds{
         return species;
     }
 
-    private void setSpecies(String species) {
-        this.species = ValidateUtil.validateString(species);
-    }
+
     private void setMovementType(String movementType) {
         this.movementType = ValidateUtil.validateString(movementType);
     }
